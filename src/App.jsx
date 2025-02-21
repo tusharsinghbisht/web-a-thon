@@ -1,11 +1,19 @@
-import React from 'react'
+import React from "react";
+import "./App.css";
+import { Taskbar, Navbar, SocialMenu, TabManager } from "./components";
 
 const App = () => {
   return (
-    <div>
-      Hello world
-    </div>
-  )
-}
+    <main className="main">
+      <Navbar />
 
-export default App
+      <div className=""></div>
+      <TabManager />
+
+      <Taskbar />
+      <SocialMenu />
+    </main>
+  );
+};
+
+export default App;

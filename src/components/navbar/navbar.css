@@ -1,0 +1,82 @@
+.navbar {
+    width: 98vw;
+    height: 8%;
+    background-color: rgba(255, 255, 255, 0.096);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: DMain;
+    color: var(--warm);
+}
+
+.navbar span {
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+.navbar span:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.navbar .nav-btn {
+    position: relative;
+    background: var(--hot);
+    margin-right: 20px;
+    
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: Header;
+    cursor: pointer;
+    transition: 0.5s;
+    overflow: hidden;
+    /* overflow: hidden; */
+}
+.navbar .nav-btn::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    top: 0;
+    right: 100%;
+    border-radius: 20px;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+
+.navbar .nav-btn::before {
+    content: "Get Started";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--warm);
+    top: 0;
+    right: 200%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Header;
+    border-radius: 20px;
+    z-index: 2;
+    transition: 0.8s;
+}
+
+
+.navbar .nav-btn:hover::after {
+    transition: 0.5s;
+    right: 0;
+}
+
+.navbar .nav-btn:hover::before {
+    transition: 0.8s;
+    right: 0;
+}
+
