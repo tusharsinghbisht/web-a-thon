@@ -1,0 +1,34 @@
+.contacttab {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.contacttab h1 {
+    font-family: DMain;
+    margin-top: 28px;
+    color: var(--cool);
+}
+
+.contacttab p {
+    font-family: Digital;
+    font-size: 12px;
+}
+.contacttab button {
+    font-family: Digital;
+    margin-top: 20px;
+    color: var(--warm);
+    border: 1px solid var(--warm);
+    padding: 10px 12px;
+    cursor: pointer;
+}
+.contacttab button:hover {
+    color: var(--dark);
+    background: var(--warm);
+}
+

@@ -1,0 +1,34 @@
+.abouttab {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.abouttab h1 {
+    font-family: DMain;
+    margin-top: 28px;
+    color: var(--cool);
+}
+
+.abouttab p {
+    font-family: Digital;
+    font-size: 12px;
+}
+.abouttab button {
+    font-family: Digital;
+    margin-top: 20px;
+    color: var(--hot);
+    border: 1px solid var(--hot);
+    padding: 10px 12px;
+    cursor: pointer;
+}
+.abouttab button:hover {
+    color: var(--dark);
+    background: var(--hot);
+}
+

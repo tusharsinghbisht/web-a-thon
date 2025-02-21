@@ -1,0 +1,34 @@
+.hometab {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.hometab h1 {
+    font-family: DMain;
+    margin-top: 28px;
+    color: var(--cool);
+}
+
+.hometab p {
+    font-family: Digital;
+    font-size: 12px;
+}
+.hometab button {
+    font-family: Digital;
+    margin-top: 20px;
+    color: var(--hot);
+    border: 1px solid var(--hot);
+    padding: 10px 12px;
+    cursor: pointer;
+}
+.hometab button:hover {
+    color: var(--dark);
+    background: var(--hot);
+}
+

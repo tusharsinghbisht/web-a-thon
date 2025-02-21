@@ -5,10 +5,15 @@ import { MdHome } from "react-icons/md";
 import { IoMdPlanet } from "react-icons/io";
 import { IoCall } from "react-icons/io5";
 import { useStore } from "../../context/AppContext";
+import HomeTab from "../tabs/home/HomeTab";
+import AboutTab from "../tabs/about/AboutTab";
+import ExploreTab from "../tabs/explore/ExploreTab";
+import ReviewsTab from "../tabs/reviews/ReviewsTab";
+import ContactTab from "../tabs/contact/ContactTab";
 
 const Taskbar = () => {
   const { tabs, setTabs } = useStore();
-  const tabContent = [<p>hello</p>, <p>hello</p>, <p>hello</p>, <p>hello</p>];
+  const tabContent = [<HomeTab/>, <AboutTab />, <ExploreTab />, <ReviewsTab />, <ContactTab/>];
 
   const setCurrTab = (page, id) => {
     // setPage(page);
@@ -27,7 +32,7 @@ const Taskbar = () => {
     <div className="taskbar">
       <div className="task-list">
         <div
-          onClick={() => setCurrTab("Home", 1)}
+          onClick={() => setCurrTab("Home", 0)}
           className={
             tabs.length != 0 && tabs[tabs.length - 1].id == 0
               ? "task-item task-item-active"
@@ -40,7 +45,7 @@ const Taskbar = () => {
           </div>
         </div>
         <div
-          onClick={() => setCurrTab("About", 2)}
+          onClick={() => setCurrTab("About", 1)}
           className={
             tabs.length != 0 && tabs[tabs.length - 1].id == 1
               ? "task-item task-item-active"
@@ -53,7 +58,7 @@ const Taskbar = () => {
           </div>
         </div>
         <div
-          onClick={() => setCurrTab("Explore", 3)}
+          onClick={() => setCurrTab("Explore", 2)}
           className={
             tabs.length != 0 && tabs[tabs.length - 1].id == 2
               ? "task-item task-item-active"
@@ -66,7 +71,7 @@ const Taskbar = () => {
           </div>
         </div>
         <div
-          onClick={() => setCurrTab("Reviews", 4)}
+          onClick={() => setCurrTab("Reviews", 3)}
           className={
             tabs.length != 0 && tabs[tabs.length - 1].id == 3
               ? "task-item task-item-active"
@@ -79,7 +84,7 @@ const Taskbar = () => {
           </div>
         </div>
         <div
-          onClick={() => setCurrTab("Contact", 5)}
+          onClick={() => setCurrTab("Contact", 4)}
           className={
             tabs.length != 0 && tabs[tabs.length - 1].id == 4
               ? "task-item task-item-active"
